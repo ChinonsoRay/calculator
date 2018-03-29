@@ -4,46 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Basic Calculator</title>
 </head>
 <body>
-   <!-- <h2>JavaScript program</h2>
+  <!-- <div align="center">
+      <div class="display"> <input type="text" size="16" id="display" readonly>
+        <div class="keys">
+            <p>
+                <input type="button" class="button" value="mrc" onclick='c("not defined")'>
+                <input type="button" class="button" value="(" onclick="'math("(")'">
+                <input type="button" class="button" value=")" onclick="'math(")")'">
+                <input type="button" class="button" value="/" onclick="'math("/")'">
+            </p>
+            <p>
+                <input type="button" class="button" value="7" onclick="'math("7")'">
+                <input type="button" class="button" value="8" onclick="'math("8")'">
+                <input type="button" class="button" value="9" onclick="'math("9")'">
+                <input type="button" class="button" value="x" onclick="'math("x")'">
+            </p>
+            <p>
+                <input type="button" class="button" value="4" onclick="'math("4")'">
+                <input type="button" class="button" value="5" onclick="'math("5")'">
+                <input type="button" class="button" value="6" onclick="'math("6")'">
+                <input type="button" class="button" value="-" onclick="'math("-")'">
+            </p>
+            <p>
+                <input type="button" class="button" value="1" onclick="'math("1")'">
+                <input type="button" class="button" value="2" onclick="'math("2")'">
+                <input type="button" class="button" value="3" onclick="'math("3")'">
+                <input type="button" class="button" value="+" onclick="'math("+")'">
+            </p>
+            <p>
+                <input type="button" class="button" value="0" onclick="'math("0")'">
+                <input type="button" class="button" value="." onclick="'math(".")'">
+                <input type="button" class="button" value="c" onclick="'math("c")'">
+                <input type="button" class="button" value="=" onclick="'math("=")'">
+            </p>
+        </div>
 
-   <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+      </div>
 
-   <p id="demo"></p>
+  </div> -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="calc.css"/>
+<html>
+    <div class="container-fluid" id="box">
+        <h1>Basic Calculator</h1>
+        <div id="results">0</div>
+        <div id="row-container">
+            <div class="row">
+                <button id="AC" class="buttons col-md-2 operations ">AC</button>
+                <button id="CE" class="buttons col-md-2 operations ">CE</button>
+                <button id="percent" class="buttons col-md-2 operations ">%</button>
+                <button id="subtract" class="buttons operations col-md-3 ">-</button>
+            </div>
+            <div class="row">
+                <button value="7" class="buttons col-md-2 ">7</button>
+                <button value="8" class="buttons col-md-2 ">8</button>
+                <button value="9" class="buttons col-md-2 ">9</button>
+                <button id="multiply" class="buttons operations col-md-3 ">x</button>
+            </div>
+            <div class="row">
+                <button value="4" class="buttons col-md-2 ">4</button>
+                <button value="5" class="buttons col-md-2 ">5</button>
+                <button value="6" class="buttons col-md-2 ">6</button>
+                <button id="divide" class="buttons operations col-md-3 ">/</button>
+            </div>
+            <div class="row">
+                <button value="1" class="buttons col-md-2 ">1</button>
+                <button value="2" class="buttons col-md-2 ">2</button>
+                <button value="3" class="buttons col-md-2 ">3</button>
+                <button id="add" class="buttons operations col-md-3 ">+</button>
+            </div>
+            <div class="row">
+                <button value="." class="buttons col-md-2 ">.</button>
+                <button value="0" class="buttons col-md-2 ">0</button>
+                <button id="ans" class="buttons col-md-2  operations">Ans</button>
+                <button id="equals" class="buttons col-md-3 operations ">=</button>
+            </div>
+        </div>
+    </div> 
+</html>
 
-   <script src="main.js"></script> -->
-   <div id="calculator">
-    <!-- Screen and clear key -->
-    <link rel="stylesheet" href="calc.css">
-	<div class="top">
-		<span class="clear">C</span>
-		<div class="screen"></div>
-	</div>
-	
-	<div class="keys">
-		<!-- operators and other keys -->
-		<span>7</span>
-		<span>8</span>
-		<span>9</span>
-		<span class="operator">+</span>
-		<span>4</span>
-		<span>5</span>
-		<span>6</span>
-		<span class="operator">-</span>
-		<span>1</span>
-		<span>2</span>
-		<span>3</span>
-		<span class="operator">÷</span>
-		<span>0</span>
-		<span>.</span>
-		<span class="eval">=</span>
-		<span class="operator">x</span>
-	</div>
-</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 
-<!-- PrefixFree -->
 <script src="main.js"></script>
 </body>
 </html>
